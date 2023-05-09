@@ -1,0 +1,642 @@
+/*--
+    Author: W3layouts
+    Author URL: http://w3layouts.com
+    License: Creative Commons Attribution 3.0 Unported
+    License URL: http://creativecommons.org/licenses/by/3.0/
+--*/
+
+
+
+/*-- Reset Code --*/
+
+	html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+	article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+	ol,ul{list-style:none;padding:0;margin:0;}
+	blockquote,q{quotes:none;}
+	blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+	table{border-collapse:collapse;border-spacing:0;}
+	a{text-decoration:none;}
+	.txt-rt{text-align:right;}
+	.txt-lt{text-align:left;}
+	.txt-center{text-align:center;}
+	.float-rt{float:right;}
+	.float-lt{float:left;}
+	.clear{clear:both;}
+	.pos-relative{position:relative;}
+	.pos-absolute{position:absolute;}
+	.vertical-base{vertical-align:baseline;}
+	.vertical-top{vertical-align:top;}
+	.underline{	padding-bottom:5px;	border-bottom:1px solid #eee;margin:0 0 20px 0;}
+	nav.vertical ul li{display:block;}
+	nav.horizontal ul li{display: inline-block;}
+	img{max-width:100%;}
+
+/*-- Reset Code --*/
+
+
+
+/*-- Index-Page-Styling --*/
+
+body {
+	background: url("../images/b2.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	color: #FFF;
+	font-family: 'Quicksand', sans-serif;
+	text-align: center;
+}
+
+body a {
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+	text-decoration: none;
+}
+
+input[type="button"], input[type="submit"] {
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+}
+
+h1 {
+    font-size: 45px;
+    font-weight: 300;
+    color: #fff;
+    letter-spacing: 7px;
+    margin: 65px auto;
+}
+
+.w3layoutscontaineragileits {
+    width: 30%;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+}
+
+h2 {
+    font-size: 35px;
+    font-weight: 300;
+    margin-bottom: 30px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+input[type="text"], input[type="password"], input[type="email"]{
+	width: 84%;
+	padding: 15px 10px 15px;
+	font-size: 14px;
+	background: transparent;
+	border: 2px solid #537b35;
+	outline: none;
+	margin-bottom: 26px;
+	color: #fff;
+	font-family: 'Quicksand', sans-serif;
+}
+input[type="text"]{
+	background: url("../images/user.png") no-repeat 382px 11px;
+	background-size: 25px;
+}
+input[type="email"] {
+	background: url("../images/e-mail.png") no-repeat 382px 11px;
+	background-size: 25px;
+}
+
+input[type="password"] {
+	background: url("../images/password.png") no-repeat 382px 11px;
+	background-size: 25px;
+}
+
+ul.agileinfotickwthree {
+	list-style: none;
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 40px;
+	text-align: left;
+	padding-left: 10px;
+}
+
+ul.agileinfotickwthree li input[type="checkbox"] {
+	display: none;
+}
+
+ul.agileinfotickwthree li input[type="checkbox"]+label {
+	position: relative;
+	padding-left: 50px;
+	border: #F0F8FF;
+	display: inline-block;
+	font-size: 15px;
+    color: #fff;
+}
+ul.agileinfotickwthree a {
+    float: right;
+    margin-right: 40px;
+    color: #fff;
+    font-size: 15px;
+}
+ul.agileinfotickwthree a:hover {
+    color: #537b35;
+}
+ul.agileinfotickwthree li input[type="checkbox"]+label span:first-child {
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+	border: 2px solid #537b35;
+	position: absolute;
+	top: -1px;
+	left: 20px;
+	bottom: 4px;
+}
+
+ul.agileinfotickwthree li input[type="checkbox"]:checked+label span:first-child:before {
+	content: "";
+	background: url(../images/tick.png)no-repeat;
+	position: absolute;
+	left: 3px;
+	top: 3px;
+	font-size: 10px;
+	width: 10px;
+	height: 10px;
+}
+
+input[type="submit"] {
+	font-size: 16px;
+	padding: 10px 65px;
+	background-color: #537b35;
+	color: #FFF;
+	border: none;
+	border-radius: 0px;
+	outline: none;
+	float:none;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #fff;
+    color: #537b35;
+}
+
+.aitssendbuttonw3ls p {
+    text-align: center;
+    margin-top: 40px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+.aitssendbuttonw3ls p a {
+    color: #fff;
+    font-weight: 600;
+    padding: 8px 20px;
+    border: 1px solid #fff;
+}
+
+.aitssendbuttonw3ls p a span {
+	font-size: 18px;
+}
+
+.aitssendbuttonw3ls p a:hover {
+	color: #537b35;
+    border: 1px solid #537b35;
+}
+
+::-webkit-input-placeholder {
+	color: #FFF;
+}
+
+::-moz-placeholder {
+	color: #FFF;
+}
+
+::-moz-placeholder {
+	color: #FFF;
+}
+
+::-ms-input-placeholder {
+	color: #FFF;
+}
+
+.w3footeragile {
+	margin: 100px 0px 20px;
+}
+
+.w3footeragile p a {
+	color: #000;
+	font-weight:700;
+}
+
+.w3footeragile p {
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+.w3footeragile p a:hover {
+	color: #fff;
+}
+
+/*-- Index-Page-Styling --*/
+
+/* pop-up-box-styling */
+
+.contact-form1 {
+    padding: 60px 40px;
+    background: #537b35;
+}
+#small-dialog, #small-dialog1, #small-dialog2 {
+    max-width: 555px;
+}
+label.checkbox {
+    display: block;
+    margin: 5px 0px 0px 23px;
+    text-align: left;
+}
+
+label {
+    color: #000;
+    font-size: 15px;
+}
+input[type="checkbox"] {
+    margin: 3px 13px 3px 4px;
+}
+.submit-w3l {
+    margin-top: 30px;
+}
+.contact-w3-agileits h3 {
+    color: #fff;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 40px;
+    letter-spacing: 4px;
+}
+.form-sub-w3ls input[type="text"],.form-sub-w3ls input[type="password"],.form-sub-w3ls input[type="email"]{
+	border:2px solid #fff;
+}
+.submit-w3l  input[type="submit"] {
+	background:#fff;
+	color:#537b35;
+}
+.submit-w3l  input[type="submit"]:hover {
+	background:#fff;
+	color:#000;
+}
+
+/* pop-up-box-styling */
+
+
+/*--- Responsive Code ---*/
+
+@media screen and (max-width: 1440px) {
+	.w3layoutscontaineragileits {
+		width: 33%;
+	}
+}
+
+@media screen and (max-width: 1366px) {
+	.w3layoutscontaineragileits {
+		width: 35%;
+	}
+	.w3footeragile {
+		margin: 100px 10px 20px;
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	.w3layoutscontaineragileits {
+		width: 37%;
+	}
+}
+
+@media screen and (max-width: 1080px) {
+	.w3layoutscontaineragileits {
+		width: 45%;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	h1 {
+		font-size: 45px;
+		margin: 50px auto;
+	}
+	.w3layoutscontaineragileits {
+		width: 47%;
+	}
+	.w3footeragile {
+		margin: 50px 10px 20px;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.w3layoutscontaineragileits {
+		width: 48%;
+	}
+}
+@media screen and (max-width: 900px) {
+	.w3layoutscontaineragileits {
+		width:53%;
+	}
+}
+
+@media screen and (max-width: 853px) {
+	.w3layoutscontaineragileits {
+		width: 58%;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.w3layoutscontaineragileits {
+		width: 59%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.w3layoutscontaineragileits {
+		width: 61%;
+	}
+}
+
+@media screen and (max-width: 736px) {
+	h1 {
+		font-size: 40px;
+		margin: 40px auto;
+	}
+	.w3layoutscontaineragileits {
+		width: 65%;
+	}
+	h2 {
+		font-size: 35px;
+	}
+	.aitssendbuttonw3ls p {
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-width: 667px) {
+	.w3layoutscontaineragileits {
+		width: 70%;
+	}
+	.w3layoutscontaineragileits input[type="text"],.w3layoutscontaineragileits input[type="password"],.w3layoutscontaineragileits input[type="email"] {
+		width: 87%;
+	}
+	.w3footeragile p {
+		letter-spacing: 1px;
+		line-height: 24px;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	h1 {
+		margin: 35px auto;
+	}
+	.w3layoutscontaineragileits {
+		width: 74%;
+	}
+}
+
+@media screen and (max-width: 603px) {
+	.w3layoutscontaineragileits {
+		width: 78%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.w3layoutscontaineragileits {
+		width: 78%;
+	}
+	.w3layoutscontaineragileits input[type="text"],.w3layoutscontaineragileits input[type="password"],.w3layoutscontaineragileits input[type="email"] {
+		width: 87%;
+	}
+	.w3footeragile p {
+		line-height: 24px;
+	}
+}
+
+@media screen and (max-width: 568px) {
+	h1 {
+		font-size: 35px;
+		margin: 25px auto;
+	}
+	h2 {
+		font-size: 30px;
+	}
+	.w3layoutscontaineragileits input[type="text"],.w3layoutscontaineragileits input[type="password"],.w3layoutscontaineragileits input[type="email"] {
+		width: 92%;
+	}
+	ul.tick {
+		margin-bottom: 20px;
+	}
+	ul.tick li input[type="checkbox"]+label {
+		font-size: 15px;
+	}
+	ul.tick li input[type="checkbox"]+label span:first-child {
+		width: 15px;
+		height: 15px;
+		top: 0;
+		border: 1px solid #EEE;
+	}
+	input[type="submit"] {
+		font-size: 15px;
+		padding: 10px 40px;
+	}
+	.w3footeragile p {
+		font-size: 14px;
+	}
+	.contact-form1 {
+		padding: 60px 33px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	h1 {
+		font-size: 35px;
+		margin: 25px auto;
+		letter-spacing: 4px;
+	}
+	.w3layoutscontaineragileits {
+		width: 70%;
+	}
+	.aitssendbuttonw3ls {
+		text-align: center;
+	}
+	ul.agileinfotickwthree {
+		padding-left: 0;
+	}
+	.aitssendbuttonw3ls p {
+		float: left;
+	}
+	.w3layoutscontaineragileits input[type="text"],.w3layoutscontaineragileits input[type="password"],.w3layoutscontaineragileits input[type="email"] {
+		width: 94%;
+		padding: 13px 8px 13px;
+	}
+	input[type="email"] {
+		background: url(../images/e-mail.png) no-repeat 300px 11px;
+		background-size: 23px;
+	}
+	input[type="password"] {
+		background: url(../images/password.png) no-repeat 300px 11px;
+		background-size: 23px;
+	}
+	ul.agileinfotickwthree a {
+		margin-right: 5px;
+	}
+	ul.agileinfotickwthree li input[type="checkbox"]+label span:first-child{
+		left:5px;
+	}
+	ul.agileinfotickwthree li input[type="checkbox"]+label {
+		padding-left: 35px;
+	}
+	input[type="text"] {
+		background: url(../images/user.png) no-repeat 300px 11px;
+		background-size: 25px;
+	}
+}
+
+@media screen and (max-width: 414px) {
+	.w3layoutscontaineragileits {
+		width: 70%;
+	}
+	h1 {
+		font-size: 30px;
+		letter-spacing: 3px;
+	}
+	input[type="email"] {
+		background: url(../images/e-mail.png) no-repeat 255px 11px;
+		background-size: 23px;
+	}
+	input[type="password"] {
+		background: url(../images/password.png) no-repeat 255px 11px;
+		background-size: 23px;
+	}
+	.aitssendbuttonw3ls p {
+		font-size: 13px;
+	}
+	.aitssendbuttonw3ls p a {
+		font-weight: 500;
+		padding: 6px 5px;
+	}
+	
+	.w3footeragile p {
+		letter-spacing: 0px;
+	}
+	input[type="text"] {
+		background: url(../images/user.png) no-repeat 254px 11px;
+		background-size: 25px;
+	}
+	.contact-w3-agileits h3 {
+		font-size: 32px;
+		margin-bottom: 37px;
+		letter-spacing: 4px;
+	}
+	.contact-form1 {
+		padding: 60px 33px;
+	}
+	h2 {
+		font-size: 28px;
+	}
+	.w3footeragile {
+		margin: 20px 10px;
+	}
+}
+
+@media screen and (max-width: 384px) {
+	h1 {
+		letter-spacing: 0;
+	}
+	.w3layoutscontaineragileits {
+		width: 78%;
+	}
+	input[type="text"], input[type="password"], input[type="email"] {
+		font-size: 13px;
+	}
+	.contact-form1 {
+		padding: 50px 18px;
+	}
+	h2 {
+		font-size: 26px;
+	}
+}
+@media screen and (max-width: 375px) {
+	.w3layoutscontaineragileits {
+		width: 80%;
+	}
+	.contact-form1 {
+		padding: 60px 14px;
+	}
+	h2 {
+		font-size: 26px;
+	}
+}
+@media screen and (max-width: 320px) {
+	h1 {
+		font-size: 28px;
+		font-weight: 500;
+	}
+	h2 {
+		font-size: 25px;
+	}
+	.w3layoutscontaineragileits {
+		width: 86%;
+	}
+	.w3layoutscontaineragileits {
+		padding: 20px 15px;
+	}
+	input[type="email"] {
+		background: url(../images/e-mail.png) no-repeat 230px 11px;
+		background-size: 23px;
+	}
+	input[type="password"] {
+		background: url(../images/password.png) no-repeat 230px 11px;
+		background-size: 23px;
+	}
+	ul.agileinfotickwthree li input[type="checkbox"]+label span:first-child {
+		width: 13px;
+		height: 13px;
+		top: 0px;
+		left:56px;
+	}
+	ul.agileinfotickwthree li input[type="checkbox"]+label {
+		padding-left: 85px;
+	}
+	ul.agileinfotickwthree a {
+		margin-right: 72px;
+		margin-top: 9px;
+	}
+	ul.agileinfotickwthree {
+		margin-bottom: 15px;
+	}
+	.aitssendbuttonw3ls p {
+		float: none;
+		text-align: center;
+		font-size: 14px;
+		margin-top: 20px;
+	}
+	.aitssendbuttonw3ls p a,.aitssendbuttonw3ls p a:hover {
+		margin-left: 13px;
+		border: none;
+	}
+	input[type="text"] {
+		background: url(../images/user.png) no-repeat 229px 11px;
+		background-size: 25px;
+	}
+	.contact-form1 {
+		padding: 45px 3px;
+	}
+	.contact-w3-agileits h3 {
+		font-size: 30px;
+		margin-bottom: 30px;
+		letter-spacing: 3px;
+	}
+}
+
+
+
+
+
+/*--- Responsive Code ---*/
