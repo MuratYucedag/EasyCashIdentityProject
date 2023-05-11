@@ -29,15 +29,30 @@ namespace EasyCashIdentityProject.PresentationLayer.Controllers
                     UserName = appUserRegisterDto.Username,
                     Name = appUserRegisterDto.Name,
                     Surname = appUserRegisterDto.Surname,
-                    Email = appUserRegisterDto.Email
+                    Email = appUserRegisterDto.Email,
+                    City="aaaa",
+                    District="bbbb",
+                    ImageUrl="cccc"
                 };
                 var result = await _userManager.CreateAsync(appUser, appUserRegisterDto.Password);
                 if (result.Succeeded)
                 {
                     return RedirectToAction("Index", "ConfirmMail");
                 }
+                else
+                {
+                    foreach(var item in result.Errors)
+                    {
+                        ModelState.AddModelError("", item.Description);
+                    }
+                }
             }
             return View();
         }
     }
 }
+// En az 6 karakterden oluşacak
+// En az 1 küçük harf
+// En az 1 büyük harf
+// En az 1 sembol
+// En az 1 sayı içermeli
