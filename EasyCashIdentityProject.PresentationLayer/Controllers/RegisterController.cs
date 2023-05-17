@@ -58,10 +58,11 @@ namespace EasyCashIdentityProject.PresentationLayer.Controllers
 
                     SmtpClient client = new SmtpClient();
                     client.Connect("smtp.gmail.com", 587, false);
-                    client.Authenticate("projekursapi@gmail.com", "maemvfoefnhkbskb");
+                    client.Authenticate("projekursapi@gmail.com", "mvlwsrxqkaulgprp");
                     client.Send(mimeMessage);
                     client.Disconnect(true);
 
+                    TempData["Mail"] = appUserRegisterDto.Email;
 
                     return RedirectToAction("Index", "ConfirmMail");
                 }
@@ -77,3 +78,4 @@ namespace EasyCashIdentityProject.PresentationLayer.Controllers
         }
     }
 }
+//demoprojelerkurs@gmail.com
