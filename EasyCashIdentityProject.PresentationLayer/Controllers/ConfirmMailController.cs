@@ -1,22 +1,37 @@
-﻿using EasyCashIdentityProject.PresentationLayer.Models;
+﻿using EasyCashIdentityProject.EntityLayer.Concrete;
+using EasyCashIdentityProject.PresentationLayer.Models;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EasyCashIdentityProject.PresentationLayer.Controllers
 {
     public class ConfirmMailController : Controller
     {
+        private readonly UserManager<AppUser> _userManager;
+        public ConfirmMailController(UserManager<AppUser> userManager)
+        {
+            _userManager = userManager;
+        }
         [HttpGet]
-        public IActionResult Index(int id)
+        public IActionResult Index()
         {
             var value = TempData["Mail"];
-            ViewBag.v = value + " aaa";
+            ViewBag.v = value;
+          //  confirmMailViewModel.Mail = value.ToString();
             return View();
         }
 
         [HttpPost]
-        public IActionResult Index(ConfirmMailViewModel confirmMailViewModel)
+        public async Task<IActionResult> Index(ConfirmMailViewModel confirmMailViewModel)
         {
+            var user = await _userManager.FindByEmailAsync(confirmMailViewModel.Mail);
+            if (user.ConfirmCode == confirmMailViewModel.ConfirmCode)
+            {
+                return RedirectToAction("Index", "MyProfile");
+                //email confirmed kısmı update edilip true'ya dönecek
+            }
             return View();
         }
     }
 }
+//Kullanıcı Adı - şifre eşleşmeli <-> email confirmed olmalı
