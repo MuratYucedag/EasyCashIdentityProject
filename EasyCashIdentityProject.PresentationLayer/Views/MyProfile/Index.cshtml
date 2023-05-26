@@ -3,4 +3,37 @@
     Layout = null;
 }
 
-<h2>Burası My Profile Sayfasıdır</h2>
+<!DOCTYPE html>
+<html lang="en">
+
+@await Component.InvokeAsync("_CustomerLayoutHeaderPartial")
+
+<body class="nav-md">
+    <div class="container body">
+        <div class="main_container">
+           
+            @await Component.InvokeAsync("_CustomerLayoutSidebarPartial")
+          
+            <!-- top navigation -->
+            @await Component.InvokeAsync("_CustomerLayoutNavbarPartial")
+            <!-- /top navigation -->
+            <!-- page content -->
+            <div class="right_col" role="main">
+                <div class="">
+                    <div class="page-title">
+                        <div class="title_left">
+                            <h3>Fixed Sidebar <small> Just add class <strong>menu_fixed</strong></small></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /page content -->
+            <!-- footer content -->
+            @await Component.InvokeAsync("_CustomerLayoutFooterPartial")
+            <!-- /top navigation -->
+            <!-- /footer content -->
+        </div>
+    </div>
+    @await Component.InvokeAsync("_CustomerLayoutScriptPartial")
+</body>
+</html>
