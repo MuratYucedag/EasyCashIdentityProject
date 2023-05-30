@@ -1,5 +1,4 @@
-﻿
-@{
+﻿@{
     Layout = null;
 }
 
@@ -8,32 +7,28 @@
 
 @await Component.InvokeAsync("_CustomerLayoutHeaderPartial")
 
-<body class="nav-md">
+<body class="nav-md footer_fixed">
     <div class="container body">
         <div class="main_container">
-           
+            
             @await Component.InvokeAsync("_CustomerLayoutSidebarPartial")
-          
-            <!-- top navigation -->
+
             @await Component.InvokeAsync("_CustomerLayoutNavbarPartial")
-            <!-- /top navigation -->
-            <!-- page content -->
+
             <div class="right_col" role="main">
                 <div class="">
                     <div class="page-title">
                         <div class="title_left">
-                            <h3>Fixed Sidebar <small> Just add class <strong>menu_fixed</strong></small></h3>
+                          <h2>@RenderBody()</h2>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- /page content -->
-            <!-- footer content -->
+
             @await Component.InvokeAsync("_CustomerLayoutFooterPartial")
-            <!-- /top navigation -->
-            <!-- /footer content -->
+
         </div>
     </div>
-    @await Component.InvokeAsync("_CustomerLayoutScriptPartial")
+    @await Component.InvokeAsync("_CustomerLayoutScriptPartial") 
 </body>
 </html>
