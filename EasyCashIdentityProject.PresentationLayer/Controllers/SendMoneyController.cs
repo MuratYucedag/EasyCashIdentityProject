@@ -47,9 +47,6 @@ namespace EasyCashIdentityProject.PresentationLayer.Controllers
 
             return RedirectToAction("Index", "Deneme");
         }
-        public IActionResult deneme()
-        {
-            return View();
-        }
+        
     }
 }
