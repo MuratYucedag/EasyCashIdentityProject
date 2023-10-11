@@ -1,4 +1,5 @@
-﻿
+﻿@model List<CustomerAccountProcess>
+
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/CustomerLayout/Index.cshtml";
@@ -34,66 +35,28 @@
                     </div>
                     <div class="x_content">
                         <ul class="list-unstyled timeline">
+                    @foreach(var item in Model){
                             <li>
                                 <div class="block">
                                     <div class="tags">
                                         <a href="" class="tag">
-                                            <span>Havale</span>
+                                            <span>@item.ProcessType</span>
                                         </a>
                                     </div>
                                     <div class="block_content">
                                         <h2 class="title">
-                                            <a>Melike Yıldırım</a>
+                                            <a>Gönderen: @item.SenderCustomer. --- Alıcı:@item.ReceiverID</a>
                                         </h2>
                                         <div class="byline">
-                                            <span>20 Haz 2023</span>
+                                            <span>@item.ProcessDate</span>
                                         </div>
                                         <p class="excerpt">
-                                            Satın alınan eşyaların 2.taksit ödemesi yapılmıştır.
+                                            @item.Description
                                         </p>
                                     </div>
                                 </div>
                             </li>
-                            <li>
-                                <div class="block">
-                                    <div class="tags">
-                                        <a href="" class="tag">
-                                            <span>Entertainment</span>
-                                        </a>
-                                    </div>
-                                    <div class="block_content">
-                                        <h2 class="title">
-                                            <a>Who Needs Sundance When You’ve Got&nbsp;Crowdfunding?</a>
-                                        </h2>
-                                        <div class="byline">
-                                            <span>13 hours ago</span> by <a>Jane Smith</a>
-                                        </div>
-                                        <p class="excerpt">
-                                            Film festivals used to be do-or-die moments for movie makers. They were where you met the producers that could fund your project, and if the buyers liked your flick, they’d pay to Fast-forward and… <a>Read&nbsp;More</a>
-                                        </p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="block">
-                                    <div class="tags">
-                                        <a href="" class="tag">
-                                            <span>Entertainment</span>
-                                        </a>
-                                    </div>
-                                    <div class="block_content">
-                                        <h2 class="title">
-                                            <a>Who Needs Sundance When You’ve Got&nbsp;Crowdfunding?</a>
-                                        </h2>
-                                        <div class="byline">
-                                            <span>13 hours ago</span> by <a>Jane Smith</a>
-                                        </div>
-                                        <p class="excerpt">
-                                            Film festivals used to be do-or-die moments for movie makers. They were where you met the producers that could fund your project, and if the buyers liked your flick, they’d pay to Fast-forward and… <a>Read&nbsp;More</a>
-                                        </p>
-                                    </div>
-                                </div>
-                            </li>
+                            }
                         </ul>
 
                     </div>
