@@ -16,6 +16,9 @@ builder.Services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<Contex
 builder.Services.AddScoped<ICustomerAccountProcessDal, EfCustomerAccountProcessDal>();
 builder.Services.AddScoped<ICustomerAccountProcessService, CustomerAccountProcessManager>();
 
+builder.Services.AddScoped<ICustomerAccountDal, EfCustomerAccountDal>();
+builder.Services.AddScoped<ICustomerAccountService, CustomerAccountManager>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
